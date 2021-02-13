@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="container">
+
+    <h2>Tuition Waiver Form</h2>
+
+    <i>
+        This form is used by part-time faculty, part-time staff, retirees, their spouses or domestic partners and their dependents.
+        All full-time faculty and staff should use the online Tuition Waiver Form found on myNEU. Before completing this form,
+        please refer to the Tuition Waiver Program Guidelines. Be sure to include a Dependent Certification Form along with
+        the submission of this form for any dependent children.
+    </i>
+
+    <form action="part4" method = "post">
+
+        <h3 style="color: #ff0000">Section 1</h3>
+        <label>Academic Term: </label>
+        <input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="academicTerm">
+
+        <label>Academic Year: </label>
+        <input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="academicYear">
+        <br/>
+
+        <label>Employee Status: </label>
+        <input type="radio" id="staff" value="staff" name="status"> staff
+        <input type="radio" id="faculty" value="faculty" name="status"> faculty
+        <input type="radio" id="retiree" value="retiree" name="status"> retiree
+        <input type="radio" id="other" value="other" name="status"> other
+        <br/>
+        <i>
+            *Terms with multiple sessions are considered one academic term for tuition waiver purposes e.g., summer sessions I and
+            II are considered one academic term.
+        </i>
+        <br/>
+        <br/>
+        <h3 style="color: #ff0000">Section 2</h3>
+        <label>Student's Name: </label>
+        <input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="studentName">
+
+        <label>Relationship to Employee: </label>
+        <input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="relationship">
+        <label>Student's NUID: </label>
+        <input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="studentNUID">
+
+        <br/>
+
+        <label>Employee's Name(if different from Student's) </label>
+        <input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="employeeName">
+        <label>Employee's NUID: </label>
+        <input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="employeeNUIDemployeeNUID">
+        <br/>
+
+        <label>Department: </label>
+        <input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="department">
+        <label>Campus Location: </label>
+        <input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="location">
+        <label>Phone Number: </label>
+        <input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="phone">
+        <label>Supervisor's Name: </label>
+        <input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="supervisorName">
+
+        <br/>
+        <br/>
+        <h3 style="color: #ff0000">Section 3
+            <h4 style="color: cornflowerblue;">Indicate the applicable school or program: </h4>
+        </h3>
+
+        <label>
+            <input type = "radio" id = "undergraduate" value = "undergraduate" name = "program">Undergraduate Program
+        </label>
+        &nbsp;&nbsp;
+        <label>
+            <input type = "radio" id = "lawSchool" value = "lawSchool" name = "program">Law School(excludes employees)
+        </label>
+        &nbsp;&nbsp;
+        <label>
+            <input type = "radio" id = "doctoralCandidate" value = "doctoralCandidate" name = "program">Doctoral Candidate
+        </label>
+        <br/>
+
+        <label>
+            <input type = "radio" id = "CPS" value = "CPS" name = "program">College of Professional Studies(CPS) Undergraduate
+        </label>
+        &nbsp;&nbsp;
+        <label>
+            <input type = "radio" id = "graduateSchool" value = "graduateSchool" name = "program">Graduate School
+        </label>
+        &nbsp;&nbsp;
+        <label>
+            <input type = "radio" id = "CPSGraduateSchool" value = "CPSGraduateSchool" name = "program">CPS Graduate School
+        </label>
+
+        <p style="background-color: darkgrey">
+            One course per academic term may be taken one-half hour before the end of your workday. If this applies to you, this
+            form must be signed by your supervisor below and approved by Human Resources Management.
+        </p>
+
+        <p style="background-color: darkgrey">
+            Complete the following course information. If you are an employee taking a job related course, please attach the Job
+            Related Designation Form to this waiver.
+        </p>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>Course No.</th>
+                <th>Course Name</th>
+                <th>Supervisor Signature</th>
+                <th>Credit Hrs.</th>
+                <th>Day(s)</th>
+                <th>Time</th>
+
+            </tr>
+
+            <td>
+                <td><input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="c1No">&nbsp;</td>
+                <td><input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="c1Name">&nbsp;</td>
+                <td><input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="c1Signature">&nbsp;</td>
+                <td><input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="c1Credit">&nbsp;</td>
+                <td><input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="c1Day">&nbsp;</td>
+                <td><input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="c1Time">&nbsp;</td>
+                <td><p>a.m./p.m.</p></td>
+            </tr>
+
+            <td>
+                <td><input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="c2No">&nbsp;</td>
+                <td><input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="c2Name">&nbsp;</td>
+                <td><input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="c2Signature">&nbsp;</td>
+                <td><input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="c2Credit">&nbsp;</td>
+                <td><input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="c2Day">&nbsp;</td>
+                <td><input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="c2Time">&nbsp;</td>
+                <td><p>a.m./p.m.</p></td>
+            </tr>
+
+            <td>
+                <td><input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="c3No">&nbsp;</td>
+                <td><input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="c3Name">&nbsp;</td>
+                <td><input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="c3Signature">&nbsp;</td>
+                <td><input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="c3Credit">&nbsp;</td>
+                <td><input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="c3Day">&nbsp;</td>
+                <td><input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="c3Time">&nbsp;</td>
+                <td><p>a.m./p.m.</p></td>
+            </tr>
+        </table>
+
+        <h3 style="color: #ff0000">Section 4</h3>
+        <i>
+            In accordance with Northeastern University's Tuition Waiver Program Guidelines, my signature attests that I am
+            currently enrolled in the above courses, or that the student listed above is my spouse, domestic partner or
+            unmarried dependent child or the dependent child of my domestic partner as defined under current IRS tax
+            regulations. I also certify that I have read the Tuition Waiver Program Guidelines.
+        </i>
+        <br/>
+
+        <label>Employee's Signature: </label>
+        <input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="employeeSignature">
+        &nbsp;&nbsp;
+        <label>Date: </label>
+        <input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="dateIn4">
+
+        <h3 style="color: #ff0000">Section 5</h3>
+        <label>HRM Approval </label>
+        <input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="HRMApproval">
+        &nbsp;&nbsp;
+        <label>Date: </label>
+        <input style="border:0;border-bottom:1px  solid black; outline: none" type="text" name="dateIn5">
+        <br/>
+        <br/>
+        <p style="background-color: darkgrey">
+            Forms will be reviewed for completeness and eligibility. You will be notified if any additional information is needed. Mail completed form to
+            Human Resources, 250 Columbus Place or fax to (617) 373-7610. All waivers must be received by HRM within 30 days
+            of the course start date.
+        </p>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+</div>
+
+</body>
+</html>
